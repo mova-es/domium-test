@@ -1,0 +1,15 @@
+.picture {
+  position: relative;
+  background-image: url('../img/main-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    min-height: 554px;
+    padding-bottom: 50px;
+    padding-top: 120px;
+  }
+}
+

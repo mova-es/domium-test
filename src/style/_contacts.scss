@@ -1,0 +1,107 @@
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+  &__title {
+    margin-bottom: 50px;
+    color: $projects;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address-and-consult {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+}
+
+.main {
+  &__contacts-address {
+    width: 100%;
+    @include md {
+      width: 484px;
+    }
+    
+    & p {
+      color: #c9c9c9;
+      font-size: 16px;
+      @include sm {
+        font-size: 20px;
+      }
+      
+      
+    }
+
+    & p:first-child {
+      font-size: 25px;
+    }
+  }
+}
+
+.consult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: #c9c9c9;
+  font-size: 16px;
+  border: 1px solid #c9c9c9;
+  padding: 20px;
+
+  @include md {
+    width: 450px;
+  }
+
+  & p {
+    @include sm {
+      font-size: 20px;
+    }
+  }
+
+}
+.input {
+  &_name {
+    height: 50px;
+    width: 300px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+    background-color: #292828;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  &_tel {
+    height: 50px;
+    width: 300px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+    background-color: #292828;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+}
+.btn {
+  &_submit {
+    padding: 15px;
+    width: 300px;
+    color: #c9c9c9;
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid #c9c9c9;
+    font-size: 18px;
+    cursor: pointer;
+
+    @include sm {
+      font-size: 22px;
+    }
+  }
+}

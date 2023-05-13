@@ -1,0 +1,35 @@
+$header_grey: #222222;
+$grey: #292828;
+$white: #e2e2e2;
+$title: #e9e4e1c7;
+$projects: #c9c9c9;
+
+@mixin sm {
+  @media (min-width: 400px) {
+    @content;
+}
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+}
+}
+
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+}    
+}
+
+@mixin xl {
+  @media (min-width: 1300px) {
+    @content;
+}    
+}
+
+@mixin xxl {
+  @media (min-width: 1600px) {
+    @content;
+}    
+}

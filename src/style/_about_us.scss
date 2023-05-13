@@ -1,0 +1,114 @@
+.about-us {
+  &__info {
+    display: block;
+    position: relative;
+    height: 100%;
+
+    @include md {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content min-content;
+      color: #e9e4e1c7;
+      overflow: hidden;
+    }
+  }
+
+  &__info-left {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/IMG_2107-1.jpg");
+
+    @include md {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-image: url("../img/IMG_2107.JPG");
+      background-size: cover;
+    }
+  }
+  &__info-right {
+    margin: 0;
+    background: rgba(71, 71, 71, 0.8);
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    @include md {
+      position: static;
+      background: $grey;
+      grid-column-start: 2;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 60px;
+    font-weight: normal;
+    font-size: 36px;
+  }
+}
+.part1 {
+  padding: 60px 40px;
+  @include md {
+    padding-bottom: 30px;
+  }
+}
+.furniture {
+  &_description {
+    color: #cecece;
+    font-size: 16px;
+    margin-bottom: 12px;
+
+    @include sm {
+      font-size: 22px;
+    }
+    @include md {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.part2 {
+  width: 100%;
+  padding: 30px;
+  background: rgba(71, 71, 71, 0.7);
+
+  @include md {
+    margin-top: 60px;
+    background-color: #4d4c4c;
+    padding: 30px;
+  }
+}
+
+.partners {
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+}
+.partner {
+  &__logo {
+    padding: 15px;
+    height: 85px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    & img {
+      width: 100px;
+    }
+
+    &:hover {
+      background-color: #7a7a7a;
+      transition: all 500ms ease-out;
+    }
+  }
+}

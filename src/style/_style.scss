@@ -1,0 +1,139 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Didot;
+  font-weight: 400;
+  background-color: $grey;
+  color: $white;
+  line-height: 1.4;
+  font-size: 16px;
+
+  @include xl {
+    font-size: 20px;
+  }
+}
+
+.section__title {
+  font-size: 26px;
+}
+
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  padding-right: 16px;
+  padding-left: 16px;
+  
+  @include sm {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  
+  @include md {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  
+  @include xl {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  @include xxl {
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+}
+
+.input {
+  color: #c9c9c9;
+}
+.section_title {
+  font-weight: normal;
+  color: $title;
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section_subtitle {
+  font-weight: normal;
+  color: $title;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: $white;
+  opacity: 1;
+  transition: width 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  background-color: $grey;
+}
