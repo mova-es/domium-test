@@ -8,12 +8,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  &_nav {
-  }
-
-  &__container {
-  }
 }
 
 .logo {
@@ -72,8 +66,6 @@
     &:hover {
       color: #3a3430;
       transition: all 500ms ease-out;
-    }
-    &_active {
     }
   }
 

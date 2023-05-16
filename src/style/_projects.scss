@@ -1,9 +1,6 @@
 .projects {
   padding-top: 100px;
 
-  &__title {
-  }
-
   &__content {
     @include xl {
       display: grid;

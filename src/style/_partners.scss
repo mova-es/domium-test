@@ -10,18 +10,37 @@
   z-index: 5;
   cursor: pointer;
 }
+// .item1 {
+//   grid-area: item1;
+// }
 
+// .aristo-block-garderob {
+//   grid-area: item2;
+// }
+
+// .aristo-block-garage {
+//   grid-area: item3;
+// }
 .aristo {
   &__main-block {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
+
+    // @include md {
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    //   grid-template-rows: repeat(2, 1fr);
+    //   grid-template-areas: 
+    //   "item1 item1"
+    //   "item2 item3";
+    // }
   }
 
   &__picture-garderob {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     inset: 0;
     height: min-content;
     padding: 50px;
@@ -30,13 +49,20 @@
 
   &__picture-garage {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     inset: 0;
     height: min-content;
     padding: 50px;
     background: rgba($color: #000000, $alpha: 0.7);
   }
 
+  &__slider-garderob {
+    width: 70%;
+  }
+
+  &__slider-garage {
+    width: 70%;
+  }
   &__slider-garderob-main {
     height: 100%;
     width: 100%;
@@ -63,7 +89,6 @@
     padding: 20px;
     background-color: #e9dddd;
     margin: 0 auto;
-    pointer-events: none;
 
     @include lg {
       width: 100%;
@@ -161,7 +186,7 @@
 
   &__picture-kreslo {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     inset: 0;
     height: min-content;
     padding: 50px;
@@ -171,7 +196,7 @@
 
   &__picture-divan {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     inset: 0;
     height: min-content;
     padding: 50px;
@@ -198,6 +223,13 @@
   &__image-vertical {
     width: auto;
     height: 600px;
+  }
+
+  &__slider-kreslo {
+    width: 50%;
+  }
+  &__slider-divan {
+    width: 70%;
   }
 
   &__slider-kreslo-main {
