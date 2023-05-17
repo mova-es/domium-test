@@ -18,7 +18,7 @@ body {
   background-color: $grey;
   color: $white;
   line-height: 1.4;
-  font-size: 16px;
+  font-size: 18px;
 
   @include xl {
     font-size: 20px;
@@ -72,6 +72,10 @@ iframe {
 
 .hide {
   display: none;
+}
+
+.slider-on {
+  overflow: hidden;
 }
 
 .center {

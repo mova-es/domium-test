@@ -18,6 +18,8 @@
 .customer-projects {
 
   &__slider {
+    max-width: 500px;
+
     @include md {
       display: none;
     }
@@ -57,6 +59,8 @@
 .designer-projects {
 
   &__slider {
+    max-width: 500px;
+    
     @include md {
       display: none;
     }

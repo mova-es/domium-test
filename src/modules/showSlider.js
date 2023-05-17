@@ -1,3 +1,4 @@
+const bodyEl = document.querySelector('body');
 
 export const showSliderGarderob = () => {
     const blockImageEl = document.querySelector('.aristo-block-garderob');
@@ -5,11 +6,13 @@ export const showSliderGarderob = () => {
     const exitEl = document.querySelector('.garderob__exit');
 
     blockImageEl.addEventListener('click', function (e) {
-        garderobSlider.classList.remove('hide')
+        garderobSlider.classList.remove('hide');
+        bodyEl.classList.add('slider-on')
     });
 
     exitEl.addEventListener('click', function (e) {
-        garderobSlider.classList.add('hide')
+        garderobSlider.classList.add('hide');
+        bodyEl.classList.remove('slider-on')
     });
 }
 
@@ -20,10 +23,12 @@ export const showSliderGarage = () => {
 
     blockImageGarageEl.addEventListener('click', function (e) {
         garageSlider.classList.remove('hide')
+        bodyEl.classList.add('slider-on')
     });
 
     exitGarageEl.addEventListener('click', function (e) {
         garageSlider.classList.add('hide')
+        bodyEl.classList.remove('slider-on')
     });
 }
 
@@ -34,10 +39,12 @@ export const showSliderKreslo = () => {
 
     blockImageKresloEl.addEventListener('click', function (e) {
         kresloSlider.classList.remove('hide')
+        bodyEl.classList.add('slider-on')
     });
 
     exitKresloEl.addEventListener('click', function (e) {
         kresloSlider.classList.add('hide')
+        bodyEl.classList.remove('slider-on')
     });
 }
 
@@ -48,9 +55,11 @@ export const showSliderDivan = () => {
 
     blockImageDivanEl.addEventListener('click', function (e) {
         divanSlider.classList.remove('hide')
+        bodyEl.classList.add('slider-on')
     });
 
     exitDivanEl.addEventListener('click', function (e) {
         divanSlider.classList.add('hide')
+        bodyEl.classList.remove('slider-on')
     });
 }
