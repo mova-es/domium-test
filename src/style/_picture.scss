@@ -4,6 +4,10 @@
   background-size: cover;
   background-position: center;
 
+  @include lg {
+    background-image: url(../img/main-mobile.jpg);
+  }
+
   &__container {
     position: relative;
     z-index: 10;

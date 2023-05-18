@@ -2,23 +2,57 @@
   padding-top: 100px;
   padding-bottom: 30px;
 
+  &__address__name {
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
   &__title {
     margin-bottom: 50px;
     color: $projects;
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
+  &__subtitle {
+    font-size: 24px;
   }
 
-  &__address-and-consult {
-    margin-top: 50px;
+  &__text {
+    margin-bottom: 25px;
+    color: #c9c9c9;
+  }
+
+  &__link {
+    color: #c9c9c9;
+  }
+
+  &__content {
+    display: block;
+
+    @include md {
+      display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    @include md {
+      max-width: 500px;
+    }
+    
+  }
+
+  &__address {
+    max-width: 460px;
+  }
+
+  &__social {
+    padding-top: 20px;
     display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px;
+    gap: 20px;
   }
 }
 

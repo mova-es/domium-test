@@ -22,6 +22,9 @@
     height: 100%;
     z-index: -1;
     background-image: url("../img/IMG_2107-1.jpg");
+    background-size: cover;
+    grid-column: 1 / 2;
+    background-position: center;
 
     @include md {
       grid-row-start: 1;
