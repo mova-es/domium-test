@@ -19,12 +19,12 @@
   }
 
   &__description {
-    padding: 10px;
-    background: #7a7a7a;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    background: #4f4c4c;
+    padding: 20px;
+
+    &__text {
+      font-size: 20px;
+    }
 
     &__logos {
       display: flex;
@@ -37,6 +37,10 @@
 
     &__button {
       text-transform: uppercase;
+      background: $grey;
+      color: #c9c9c9;
+      padding: 20px;
+      font-size: 16px;
     }
   }
 }
@@ -58,6 +62,20 @@
 
 .aristo-block-garage {
   grid-area: item3;
+}
+
+.description {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    @include lg {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+  }
 }
 .aristo {
   &__main-block {
