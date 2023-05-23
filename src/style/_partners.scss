@@ -21,6 +21,8 @@
   &__description {
     background: #4f4c4c;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     &__text {
       font-size: 20px;
@@ -41,6 +43,10 @@
       color: #c9c9c9;
       padding: 20px;
       font-size: 16px;
+
+      &:hover {
+        background-color: #000000;
+      }
     }
   }
 }
@@ -93,8 +99,9 @@
     }
 
     @include xl {
-      display: flex;
-      flex-wrap: nowrap;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'item1 item2 item3';
     }
   }
 
@@ -160,7 +167,7 @@
     }
 
     @include xxl {
-      max-width: 500px;
+      max-width: unset;
     }
 
     &-first {
@@ -183,7 +190,7 @@
         max-width: 400px;
       }
       @include xxl {
-        max-width: 500px;
+        max-width: unset;
       }
 
       & img {
@@ -237,7 +244,7 @@
     }
 
     @include xxl {
-      max-width: 500px;
+      max-width: unset;
     }
 
     &-first {
@@ -261,7 +268,7 @@
       }
       @include xxl {
         width: 100%;
-        max-width: 500px;
+        max-width: unset;
       }
 
       & img {
@@ -345,9 +352,9 @@
       }
   
       @include xl {
-        display: flex;
-        gap: 10px;
-        flex-wrap: nowrap;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'item1 item2 item3';
       }
     }
   }

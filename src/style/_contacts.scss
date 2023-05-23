@@ -25,6 +25,10 @@
 
   &__link {
     color: #c9c9c9;
+
+    &:hover {
+      color: white;
+    }
   }
 
   &__content {
@@ -32,7 +36,7 @@
 
     @include md {
       display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     }
   }
@@ -40,19 +44,25 @@
   &__map {
     width: 100%;
     @include md {
-      max-width: 500px;
+      max-width: 50%;
     }
-    
   }
 
   &__address {
-    max-width: 460px;
+
+    @include md {
+      max-width: 50%;
+    }
   }
 
   &__social {
     padding-top: 20px;
     display: flex;
     gap: 20px;
+
+    & a:hover {
+      color:#5f5f5f;
+    }
   }
 }
 
