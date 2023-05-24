@@ -1,0 +1,102 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  cursor: pointer;
+  padding: 60px 30px 30px 30px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+
+  &__main {
+    position: relative;
+    max-width: 500px;
+    background-color: #292828;
+    margin: auto;
+    color: #c9c9c9;
+    padding: 30px;
+    cursor: default;
+  }
+
+  &__close {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: #c9c9c9;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+
+    &:focus-visible {
+        outline-color: #c9c9c9;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+.input {
+  &_name {
+    height: 50px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 15px;
+    background-color: #292828;
+    font-size: 20px;
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  &_tel {
+    height: 50px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 15px;
+    background-color: #292828;
+    font-size: 20px;
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  &_msg {
+    height: 100px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 15px;
+    background-color: #292828;
+    font-size: 20px;
+    padding-left: 15px;
+    width: 100%;
+  }
+}
+.btn {
+  &_submit {
+    width: 100%;
+    padding: 10px;
+    color: #c9c9c9;
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid #c9c9c9;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+
+    @include sm {
+      font-size: 22px;
+    }
+
+    &:hover {
+        background-color: #1a1919;
+    }
+  }
+}

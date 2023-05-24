@@ -10,14 +10,20 @@ import { showSliderGarderob } from "./modules/showSlider";
 import { showSliderGarage } from "./modules/showSlider";
 import { showSliderKreslo } from "./modules/showSlider";
 import { showSliderDivan } from "./modules/showSlider";
+import { headerFix } from "./modules/headerFix";
+import { showForm } from "./modules/showfowm";
+import { formHandle } from "./modules/formHandle";
 
 //use modules
 
+headerFix();
 menuControl();
 showSliderGarderob();
 showSliderGarage();
 showSliderKreslo();
 showSliderDivan();
+showForm();
+formHandle();
 
 
 slidersInit(".aristo__slider-garderob", {

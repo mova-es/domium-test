@@ -78,6 +78,12 @@ iframe {
   overflow: hidden;
 }
 
+.modal__active {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px;
+}
+
 .center {
   text-align: center;
 }
@@ -140,4 +146,12 @@ iframe {
 .swiper-pagination-bullet-active {
   width: 40px;
   background-color: $grey;
+}
+
+.swiper-button-next::after {
+  color:black;
+}
+
+.swiper-button-prev::after {
+  color:black;
 }

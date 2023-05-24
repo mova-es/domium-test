@@ -216,6 +216,9 @@
                   <li class="designer-projects__slider-item swiper-slide">
                     <img src="./img/IMG_1657.JPG" alt="спальня" />
                   </li>
+                  <li class="designer-projects__slider-item swiper-slide">
+                    <img src="./img/IMG_2116.JPG" alt="спальня" />
+                  </li>
                 </ul>
                 <div class="designer-pagination swiper-pagination"></div>
               </div>
@@ -249,20 +252,33 @@
             </div>
             <ul class="aristo__image-list swiper-wrapper">
               <li class="aristo__image-item swiper-slide">
-                <img
+                <picture>
+                  <source
+                      srcset="img/aristo-2foto.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
                   class="aristo__image"
-                  src="img/aristo-2foto.jpg"
+                  src="img/garderob_mobile1.jpg"
                   alt="гардеробная"
                   loading="lazy"
-                />
+                    />
+                </picture>
               </li>
               <li class="aristo__image-item swiper-slide">
-                <img
+                <picture>
+                  <source
+                      srcset="img/Aristo_semeinaya-garderobnaya.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
                   class="aristo__image"
-                  src="img/Aristo_semeinaya-garderobnaya.jpg"
+                  src="img/Aristo_semeinaya-garderobnaya2.jpg"
                   alt="гардеробная"
                   loading="lazy"
                 />
+                </picture>
+                
               </li>
               <li class="aristo__image-item swiper-slide">
                 <img
@@ -806,7 +822,23 @@
           </div>
         </div>
       </section>
+      <div class="modal">
+        <div class="modal__main">
+          <h3 class="modal__title">
+            Служба поддержки всегда на связи и готова вам помочь, чтобы вы получили максимальный результат.
+          </h3>
+          <div class="modal__container">
+            <form id="form-consult" action="handler.php" class="modal__form" method="post">
+              <input class="input_name" name="name" type="text" id="name" placeholder="Введите ваше имя" required>
+              <input class="input_tel" name="phone" type="tel" id="tel" placeholder="Введите ваш телефон" required>
+              <input class="input_msg" type="text" name="message" id="message" placeholder="Введите текст сообщения">
+              <button class="btn_submit" type="submit">Получить консультацию</button>
+            </form>
+          </div>
+
+          <button class="modal__close">&#10006;</button>
+        </div>
+      </div>
     </main>
-    <footer class="footer"></footer>
   </body>
 </html>
