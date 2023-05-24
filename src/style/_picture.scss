@@ -3,6 +3,7 @@
   background-image: url('../img/IMG_5187.JPG');
   background-size: cover;
   background-position: center;
+  height: 100vh;
 
   @include lg {
     background-image: url(../img/main-mobile.jpg);

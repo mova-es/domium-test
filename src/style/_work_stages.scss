@@ -9,6 +9,13 @@
     color: #e9e4e1c7;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   &__description {
     position: static;
     z-index: 1;
