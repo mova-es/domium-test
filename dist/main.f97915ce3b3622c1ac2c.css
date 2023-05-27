@@ -1511,20 +1511,15 @@ iframe {
 }
 .gliver__slider-kreslo {
   width: 90%;
-  height: -webkit-min-content;
-  height: min-content;
 }
 .gliver__slider-divan {
   width: 90%;
-  height: -webkit-min-content;
-  height: min-content;
+
 }
 .gliver__slider-kreslo-main {
-  height: 100%;
   width: 100%;
 }
 .gliver__slider-divan-main {
-  height: 100%;
   width: 100%;
 }
 .gliver__image-list {
