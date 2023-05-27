@@ -1320,21 +1320,17 @@ iframe {
 .aristo__slider-garderob {
   width: 90%;
   height: -webkit-min-content;
-  height: min-content;
   position: relative;
 }
 .aristo__slider-garage {
   width: 90%;
-  height: -webkit-min-content;
-  height: min-content;
-  max-height: 100%;
 }
 .aristo__slider-garderob-main {
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
 }
 .aristo__slider-garage-main {
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
 }
 .aristo__image-item img {
