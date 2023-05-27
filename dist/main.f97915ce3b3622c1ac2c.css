@@ -1326,17 +1326,13 @@ iframe {
   width: 90%;
 }
 .aristo__slider-garderob-main {
-  height: 100%;
   width: 100%;
 }
 .aristo__slider-garage-main {
-  height: 100%;
   width: 100%;
 }
 .aristo__image-item img {
   width: 100%;
-  height: -webkit-min-content;
-  height: min-content;
 }
 .aristo__image-list {
   height: -webkit-min-content;
