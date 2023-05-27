@@ -1319,7 +1319,6 @@ iframe {
 }
 .aristo__slider-garderob {
   width: 90%;
-  height: -webkit-min-content;
   position: relative;
 }
 .aristo__slider-garage {
@@ -1490,16 +1489,12 @@ iframe {
   align-items: center;
 }
 .gliver__image-item {
-  height: -webkit-min-content;
-  height: min-content;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .gliver__image-item img {
   width: 100%;
-  height: -webkit-min-content;
-  height: min-content;
 }
 .gliver__image {
   width: 60%;
@@ -1514,7 +1509,6 @@ iframe {
 }
 .gliver__slider-divan {
   width: 90%;
-
 }
 .gliver__slider-kreslo-main {
   width: 100%;
