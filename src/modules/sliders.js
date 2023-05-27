@@ -1,4 +1,4 @@
-import { Swiper, Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, Autoplay, Navigation, Pagination, Zoom } from "swiper";
 
 const params = {
     spaceBetween: 20,
@@ -6,6 +6,9 @@ const params = {
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,
+    },
+    zoom: {
+        maxRatio: 2,
     },
     slidesPerView: 1,
     pagination: {
@@ -15,7 +18,7 @@ const params = {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-    modules: [Autoplay, Navigation, Pagination]
+    modules: [Autoplay, Navigation, Pagination, Zoom]
 };
 
 export const slidersInit = (selectorSlider, newParams) => {

@@ -31,6 +31,7 @@ slidersInit(".aristo__slider-garderob", {
     nextEl: ".garderob-next",
     prevEl: ".garderob-prev"
   },
+  autoplay: false,
 });
 
 slidersInit(".aristo__slider-garage", {
@@ -38,6 +39,7 @@ slidersInit(".aristo__slider-garage", {
     nextEl: ".garage-next",
     prevEl: ".garage-prev"
   },
+  autoplay: false,
 });
 
 slidersInit(".gliver__slider-kreslo", {
@@ -45,6 +47,7 @@ slidersInit(".gliver__slider-kreslo", {
     nextEl: ".kreslo-next",
     prevEl: ".kreslo-prev"
   },
+  autoplay: false,
 });
 
 slidersInit(".gliver__slider-divan", {
@@ -52,6 +55,7 @@ slidersInit(".gliver__slider-divan", {
     nextEl: ".divan-next",
     prevEl: ".divan-prev"
   },
+  autoplay: false,
 });
 
 slidersInit(".customer-projects__slider", {

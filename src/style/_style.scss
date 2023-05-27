@@ -71,7 +71,7 @@ iframe {
 }
 
 .hide {
-  display: none;
+  visibility: hidden;
 }
 
 .slider-on {
@@ -133,6 +133,16 @@ iframe {
   font-size: 26px;
   margin-bottom: 20px;
   text-align: center;
+
+  @include xl {
+    text-align: left;
+  }
+}
+
+.designer-projects > .section_subtitle {
+  @include xl {
+    text-align: right;
+  }
 }
 
 .swiper-pagination-bullet {
