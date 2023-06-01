@@ -116,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
   }
 
   &__picture-garage {
@@ -128,6 +129,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
   }
 
   &__slider-garderob {
@@ -391,6 +393,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     // width: 100%;
   }
 
@@ -404,6 +407,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     // width: 100%;
   }
 
@@ -421,7 +425,7 @@
 
   &__image {
     width: 60%;
-    height: 60%;
+    // height: 60%;
   }
 
   &__image-vertical {
