@@ -134,7 +134,6 @@
 
   &__slider-garderob {
     width:90%;
-    height: min-content;
     position: relative;
 
     @include md {
@@ -144,8 +143,6 @@
 
   &__slider-garage {
     width:90%;
-    height: min-content;
-    max-height: 100%;
     @include md {
       width:70%;
     }
@@ -160,11 +157,11 @@
 
   &__image-item img {
     width: 100%;
-    height: min-content;
+
   }
 
   &__image-list {
-    height: min-content;
+
   }
 }
 
