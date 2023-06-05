@@ -111,7 +111,7 @@
     position: fixed;
     inset: 0;
     height: 100%;
-    padding: 60px 10px;
+    padding: 20px;
     background: rgba($color: #000000, $alpha: 0.7);
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@
     position: fixed;
     inset: 0;
     height: 100%;
-    padding: 60px 10px;
+    padding: 20px;
     background: rgba($color: #000000, $alpha: 0.7);
     display: flex;
     justify-content: center;
@@ -135,6 +135,7 @@
   &__slider-garderob {
     width:90%;
     position: relative;
+    height: 100%;
 
     @include md {
       width:70%;
@@ -143,6 +144,8 @@
 
   &__slider-garage {
     width:90%;
+    height: 100%;
+
     @include md {
       width:70%;
     }
@@ -383,7 +386,7 @@
     position: fixed;
     inset: 0;
     height: 100%;
-    padding: 60px 10px;
+    padding: 20px;
     background: rgba($color: #000000, $alpha: 0.7);
     display: flex;
     justify-content: center;
@@ -397,7 +400,7 @@
     position: fixed;
     inset: 0;
     height: 100%;
-    padding: 60px 10px;
+    padding: 20px;
     background: rgba($color: #000000, $alpha: 0.7);
     display: flex;
     justify-content: center;
@@ -430,6 +433,7 @@
   &__slider-kreslo {
     width: 90%;
     height: min-content;
+    max-height: 100%;
 
     @include md {
       width: 70%;
@@ -442,6 +446,7 @@
   &__slider-divan {
     width:90%;
     height: min-content;
+    max-height: 100%;
 
     @include md {
       width:70%;
