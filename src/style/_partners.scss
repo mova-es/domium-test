@@ -135,7 +135,8 @@
   &__slider-garderob {
     width:90%;
     position: relative;
-    height: 100%;
+    height: min-content;
+    max-height: 100%;
 
     @include md {
       width:70%;
@@ -144,7 +145,8 @@
 
   &__slider-garage {
     width:90%;
-    height: 100%;
+    height: min-content;
+    max-height: 100%;
 
     @include md {
       width:70%;
