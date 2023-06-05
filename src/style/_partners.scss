@@ -58,6 +58,13 @@
   right: 10px;
   z-index: 5;
   cursor: pointer;
+  color: #c9c9c9;
+  background: none;
+  font-size: 20px;
+
+  @include md {
+    font-size: 26px;
+  }
 }
 .item1 {
   grid-area: item1;
@@ -117,6 +124,9 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
   }
 
   &__picture-garage {
@@ -130,6 +140,9 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
   }
 
   &__slider-garderob {
@@ -139,7 +152,7 @@
     max-height: 100%;
 
     @include md {
-      width:70%;
+      width:80%;
     }
   }
 
@@ -149,7 +162,7 @@
     max-height: 100%;
 
     @include md {
-      width:70%;
+      width:80%;
     }
   }
   &__slider-garderob-main {
@@ -394,7 +407,9 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
-    // width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
   }
 
   &__picture-divan {
@@ -408,7 +423,9 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
-    // width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
   }
 
   &__image-item {
@@ -438,7 +455,7 @@
     max-height: 100%;
 
     @include md {
-      width: 70%;
+      width: 60%;
     }
 
     @include lg {
@@ -451,7 +468,7 @@
     max-height: 100%;
 
     @include md {
-      width:70%;
+      width:80%;
     }
   }
 

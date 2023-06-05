@@ -130,9 +130,13 @@ iframe {
 .section_subtitle {
   font-weight: normal;
   color: $title;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
+
+  @include sm {
+    font-size: 26px;
+  }
 
   @include xl {
     text-align: left;
@@ -160,8 +164,20 @@ iframe {
 
 .swiper-button-next::after {
   color:#c9c9c9;
+  --swiper-navigation-size: 22px;
+
+  @include md {
+    --swiper-navigation-size: 40px;
+  }
 }
 
 .swiper-button-prev::after {
   color:#c9c9c9;
+  --swiper-navigation-size: 22px;
+  --swiper-navigation-sides-offset: 2px;
+
+  @include md {
+    --swiper-navigation-size: 40px;
+    --swiper-navigation-sides-offset: 2px;
+  }
 }

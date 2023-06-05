@@ -5,15 +5,27 @@ export const showSliderGarderob = () => {
     const garderobSlider = document.querySelector('.aristo__picture-garderob');
     const exitEl = document.querySelector('.garderob__exit');
 
-    blockImageEl.addEventListener('click', function (e) {
-        garderobSlider.classList.remove('hide');
-        bodyEl.classList.add('slider-on')
-    });
-
-    exitEl.addEventListener('click', function (e) {
-        garderobSlider.classList.add('hide');
-        bodyEl.classList.remove('slider-on')
-    });
+    const closeModal = (event) => {
+        const target = event.target;
+    
+        if (target === garderobSlider || target === exitEl) {
+            garderobSlider.style.opacity = 0;
+            bodyEl.classList.remove('slider-on');
+    
+          setTimeout(() => {
+            garderobSlider.style.visibility = "hidden";
+          }, 300);
+        }
+      };
+    
+      const openModal = () => {
+        garderobSlider.style.visibility = "visible";
+        garderobSlider.style.opacity = 1;
+        bodyEl.classList.add('slider-on');
+      };
+    
+    blockImageEl.addEventListener("click", openModal);
+    garderobSlider.addEventListener("click", closeModal);
 }
 
 export const showSliderGarage = () => {
@@ -21,15 +33,34 @@ export const showSliderGarage = () => {
     const garageSlider = document.querySelector('.aristo__picture-garage');
     const exitGarageEl = document.querySelector('.garage__exit');
 
-    blockImageGarageEl.addEventListener('click', function (e) {
-        garageSlider.classList.remove('hide')
-        bodyEl.classList.add('slider-on')
-    });
+    garageSlider.style.cssText = `
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    `;
 
-    exitGarageEl.addEventListener('click', function (e) {
-        garageSlider.classList.add('hide')
-        bodyEl.classList.remove('slider-on')
-    });
+    const closeModal = (event) => {
+        const target = event.target;
+    
+        if (target === garageSlider || target === exitGarageEl) {
+            garageSlider.style.opacity = 0;
+            bodyEl.classList.remove('slider-on');
+    
+          setTimeout(() => {
+            garageSlider.style.visibility = "hidden";
+          }, 300);
+        }
+      };
+    
+      const openModal = () => {
+        garageSlider.style.visibility = "visible";
+        garageSlider.style.opacity = 1;
+        bodyEl.classList.add('slider-on');
+      };
+    
+    blockImageGarageEl.addEventListener("click", openModal);
+    garageSlider.addEventListener("click", closeModal);
 }
 
 export const showSliderKreslo = () => {
@@ -37,15 +68,34 @@ export const showSliderKreslo = () => {
     const kresloSlider = document.querySelector('.gliver__picture-kreslo');
     const exitKresloEl = document.querySelector('.kreslo__exit');
 
-    blockImageKresloEl.addEventListener('click', function (e) {
-        kresloSlider.classList.remove('hide')
-        bodyEl.classList.add('slider-on')
-    });
+    kresloSlider.style.cssText = `
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    `;
 
-    exitKresloEl.addEventListener('click', function (e) {
-        kresloSlider.classList.add('hide')
-        bodyEl.classList.remove('slider-on')
-    });
+    const closeModal = (event) => {
+        const target = event.target;
+    
+        if (target === kresloSlider || target === exitKresloEl) {
+            kresloSlider.style.opacity = 0;
+            bodyEl.classList.remove('slider-on');
+    
+          setTimeout(() => {
+            kresloSlider.style.visibility = "hidden";
+          }, 300);
+        }
+      };
+    
+      const openModal = () => {
+        kresloSlider.style.visibility = "visible";
+        kresloSlider.style.opacity = 1;
+        bodyEl.classList.add('slider-on');
+      };
+    
+    blockImageKresloEl.addEventListener("click", openModal);
+    kresloSlider.addEventListener("click", closeModal);
 }
 
 export const showSliderDivan = () => {
@@ -53,13 +103,33 @@ export const showSliderDivan = () => {
     const divanSlider = document.querySelector('.gliver__picture-divan');
     const exitDivanEl = document.querySelector('.divan__exit');
 
-    blockImageDivanEl.addEventListener('click', function (e) {
-        divanSlider.classList.remove('hide')
-        bodyEl.classList.add('slider-on')
-    });
+    divanSlider.style.cssText = `
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    `;
 
-    exitDivanEl.addEventListener('click', function (e) {
-        divanSlider.classList.add('hide')
-        bodyEl.classList.remove('slider-on')
-    });
+    const closeModal = (event) => {
+        const target = event.target;
+    
+        if (target === divanSlider || target === exitDivanEl) {
+            divanSlider.style.opacity = 0;
+            bodyEl.classList.remove('slider-on');
+    
+          setTimeout(() => {
+            divanSlider.style.visibility = "hidden";
+          }, 300);
+        }
+      };
+    
+      const openModal = () => {
+        divanSlider.style.visibility = "visible";
+        divanSlider.style.opacity = 1;
+        bodyEl.classList.add('slider-on');
+      };
+    
+    blockImageDivanEl.addEventListener("click", openModal);
+    divanSlider.addEventListener("click", closeModal);
 }
+
