@@ -59,13 +59,7 @@
   }
 }
 .part1 {
-  padding: 30px 20px;
-  // height: 100vh;
-  overflow: scroll;
-  @include sm {
-    padding: 60px 30px;
-    overflow: visible;
-  }
+  padding: 60px 20px;
 }
 .furniture {
   &_description {

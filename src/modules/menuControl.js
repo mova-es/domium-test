@@ -38,6 +38,12 @@ export const menuControl = () => {
     }
   });
 
+  navigationItems.forEach(item => {
+    item.addEventListener('click', () => {
+      closeMenu();
+    })
+  });
+
   const checkScreenSize = (e) => {
     if(e.matches) {
         gsap.set(navigationList, {opacity: 1, display: 'flex'});
