@@ -12,7 +12,7 @@ import { showSliderKreslo } from "./modules/showSlider";
 import { showSliderDivan } from "./modules/showSlider";
 import { headerFix } from "./modules/headerFix";
 import { showForm } from "./modules/showfowm";
-import { formHandle } from "./modules/formHandle";
+//import { formHandle } from "./modules/formHandle";
 
 //use modules
 
@@ -23,7 +23,7 @@ showSliderGarage();
 showSliderKreslo();
 showSliderDivan();
 showForm();
-formHandle();
+//formHandle();
 
 
 slidersInit(".aristo__slider-garderob", {

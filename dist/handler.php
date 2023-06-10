@@ -1,6 +1,11 @@
+<?php header("Content-Type: text/html; charset=utf-8");?>
 <?php
 
-$username = $_POST['username'];
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=utf-8\r\n";
+$headers .= "From: noreply@domium-mebel.ru \r\n";
+
+$username = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
@@ -19,10 +24,14 @@ $message = trim($message);
 
 
 // mail("на какой адрес отправить", "тема письма", "Сообщение (тело письма)","From: с какого email отправляется письмо \r\n");
-
-if (mail("mail@domiumf.ru", "Сообщение с сайта", "Имя:".$username.". Телефон: ".$phone.".Сообщение: ".$message ,"From: example2@mail.ru \r\n"))
+//  mail@domiumf.ru . Для теста можно использовать mail@domium-mebel.ru
+if (mail("mail@domiumf.ru", 
+        "Domium-Mebel.ru - сообщение с сайта", 
+         "Имя: ".$username."<br> Телефон: ".$phone."<br> Сообщение: ".$message ,
+         $headers))
  {
     echo "Сообщение успешно отправлено";
+    header("Location: /success.php");
 } else {
     echo "При отправке сообщения возникли ошибки";
 }
