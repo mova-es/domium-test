@@ -9,6 +9,8 @@ $username = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
+
+
 $username = htmlspecialchars($username);
 $phone = htmlspecialchars($phone);
 $message = htmlspecialchars($message);
@@ -21,13 +23,17 @@ $username = trim($username);
 $phone = trim($phone);
 $message = trim($message);
 
+// переменные с данными для отправки
+$to = "mail@domiumf.ru, Dtv8888@mail.ru,";
+$subject = "Domium-Mebel.ru - сообщение с сайта";
+$message = "Имя: ".$username."<br> Телефон: ".$phone."<br> Сообщение: ".$message;
 
 
 // mail("на какой адрес отправить", "тема письма", "Сообщение (тело письма)","From: с какого email отправляется письмо \r\n");
 //  mail@domiumf.ru . Для теста можно использовать mail@domium-mebel.ru
-if (mail("mail@domiumf.ru", 
-        "Domium-Mebel.ru - сообщение с сайта", 
-         "Имя: ".$username."<br> Телефон: ".$phone."<br> Сообщение: ".$message ,
+if (mail($to, 
+        $subject, 
+         $message,
          $headers))
  {
     echo "Сообщение успешно отправлено";
